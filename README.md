@@ -45,34 +45,6 @@ Performing EDA on the dataset and understanding how each of the attributes behav
 
 The [dataset](www.example.com) used in this project contains information about past loan applicants and if they 'defaulted' or not.
 
-
-## Observations
-Features Related to Borrower’s Credit History & Profile <br>
-    > - lower Annual Income [ below 90K]
-    > - higher Employment length : Unknown / Missing employment history [22 %]
-    > - Home ownership isin (other, Rent, owned)
-    > - Address State isin (NE Nebraska, NV Nevada, SD South Dacota AK Alaska and FL Florida)
-    > - higher DTI [above 11 %]
-    > - higher Revolving credit util [above 37%]
-    > - higher Credit inquiries in last 6 months [above and equal to 1]
-    > - higher Delinq occurrences in last 2 years [greater than equal to 1]
-    > - higher Number of Public record of bankrupcies [greater than equal to 1]
-    > - higher Number of derogatory public records [1 or 2]
-Features Related to current Loan application <br>
-    > - higher Loan amount [ > 13k]
-    > - higher Interest Rate [above 13%]
-    > - higher Installment [above 338]
-    > - higher Loan Grade [on and above grade C], same observations through Loan Sub Grades
-    > - Loan purpose isin [Small Business(27%), Renewable Energy(19%), Educational loan(17%)]
-    > - Verification Status isin [Verified (17%), source verified (15%), not verified (13%)]
-    > - Loan Issue Month isin [Dec, May, Sep, Oct)
-    > - Loan repayment Term is [60 months term 25%]
-Impact analysing Multiple Features <br>
-    > - High Loan amount and High Interest rates for Low Annual income borrowers
-    > - High Installments with Lower Annual Income and Longer Term
-    > - High Installments with higher Interest Rates for longer Term
-    > - High DTI individual with Lower income
-
 ## Recommendations
 Borrowers with Lower Income should be provided loans considering
 
