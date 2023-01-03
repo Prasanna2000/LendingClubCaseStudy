@@ -45,14 +45,59 @@ Performing EDA on the dataset and understanding how each of the attributes behav
 
 The [dataset](www.example.com) used in this project contains information about past loan applicants and if they 'defaulted' or not.
 
-## Conclusions
 
-- Borrowers with lower annual income default more.
-- Borrowers with a higher term tend to be defaulters more.
-- Applications with a high DTI must be scrutinized before approval.
-- The annual income and DTI of the loan applications with a higher loan amount must be verified before approval.
-- Lowering the interest rate and the monthly installments increases the chances of the loan being fully paid back.
-- TODO ADD MORE
+## Observations
+Features Related to Borrower’s Credit History & Profile <br>
+    > - lower Annual Income [ below 90K]
+    > - higher Employment length : Unknown / Missing employment history [22 %]
+    > - Home ownership isin (other, Rent, owned)
+    > - Address State isin (NE Nebraska, NV Nevada, SD South Dacota AK Alaska and FL Florida)
+    > - higher DTI [above 11 %]
+    > - higher Revolving credit util [above 37%]
+    > - higher Credit inquiries in last 6 months [above and equal to 1]
+    > - higher Delinq occurrences in last 2 years [greater than equal to 1]
+    > - higher Number of Public record of bankrupcies [greater than equal to 1]
+    > - higher Number of derogatory public records [1 or 2]
+Features Related to current Loan application <br>
+    > - higher Loan amount [ > 13k]
+    > - higher Interest Rate [above 13%]
+    > - higher Installment [above 338]
+    > - higher Loan Grade [on and above grade C], same observations through Loan Sub Grades
+    > - Loan purpose isin [Small Business(27%), Renewable Energy(19%), Educational loan(17%)]
+    > - Verification Status isin [Verified (17%), source verified (15%), not verified (13%)]
+    > - Loan Issue Month isin [Dec, May, Sep, Oct)
+    > - Loan repayment Term is [60 months term 25%]
+Impact analysing Multiple Features <br>
+    > - High Loan amount and High Interest rates for Low Annual income borrowers
+    > - High Installments with Lower Annual Income and Longer Term
+    > - High Installments with higher Interest Rates for longer Term
+    > - High DTI individual with Lower income
+
+## Recommendations
+Borrowers with Lower Income should be provided loans considering
+
+A. Loan amount should be based on interest rates, term, installments, dti and delinq history so that
+
+ a. loan amount should not be too high  [possible loss of business but Risky]
+ b. OR the installments are payable by the borrower
+B. should be reviewd for DTI, delinq history, revolving util and inquiries for credit on a regular basis
+
+Different Loan purposes have different behavior and they should be evaluated based on
+
+A. Annual Income, Credit history (DTI, revol_util, delinq, credit_inquiries and public records), Borrower specific information (Borrowers State, employment length), Loan Grade
+
+Different Loan purposes have different behavior and they should be evaluated based on
+
+A. Annual Income, Credit history (DTI, revol_util, delinq, credit_inquiries and public records), Borrower specific information (Borrowers State, employment length), Loan Grade
+
+Verifications ie both ‘Verification’ & ‘Source Verification’need some more improvements as the default rate is still high.
+
+A. Considering that verifications may have done in the cases of risky loans and those cases may have been addressed for the involved Risk, either by increasing the interest rates / reduing loan amount / adjusting the term, these adjustments needs a review whether the risk is getting mitigated. As we still see the defaults in these scenarios. 
+High Risk loan can be reduced on by
+
+A. Reducing loan amount / adjusting the installment, interest rate and term to compensate the risk
+B. asking for co-borrowers / collateral
+C. getting Investors / Credit Default Swaps
 
 ## Technologies Used
 
