@@ -79,7 +79,7 @@ C. getting Investors / Credit Default Swaps
 - Seaborn
 
 ## References : 
-https://www.lendingclub.com/
+https://www.lendingclub.com/ <br/>
 https://www.lendingclub.com/foliofn/rateDetail.actio
 
 ## Acknowledgements
