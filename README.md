@@ -43,7 +43,7 @@ Performing EDA on the dataset and understanding how each of the attributes behav
 
 ### The Dataset
 
-The [dataset](www.example.com) used in this project contains information about past loan applicants and if they 'defaulted' or not.
+The [dataset](https://github.com/kunal449/LendingClubCaseStudy/tree/main/data/loan) used in this project contains information about past loan applicants and if they 'defaulted' or not.
 
 ## Recommendations
 Borrowers with Lower Income should be provided loans considering
